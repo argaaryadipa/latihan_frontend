@@ -1,0 +1,105 @@
+.slides {
+  width: 100%;
+  position: relative;
+}
+
+.slides .slide {
+  display: none;
+}
+
+.slides .slide img {
+  width: 100%;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slides .navigation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slides .navigation .prev,
+.slides .navigation .next {
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  user-select: none;
+  transition: 0.6s ease;
+}
+
+.slides .navigation .prev:hover,
+.slides .navigation .next:hover {
+  background: rgba(0, 0, 0, 1);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .slides .navigation .prev,
+  .slides .navigation .next {
+    /* font-size: 18px;
+    padding: 13px; */
+  }
+}
+
+figure:hover img {
+  filter: blur(4px);
+  cursor: pointer;
+}
+
+/* figure:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+figure:nth-child(1):after {
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+}
+
+figure:hover:after {
+  opacity: 0.6;
+}
+
+figcaption {
+  color: #ffffff;
+  width: 80%;
+  position: absolute;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 3px solid #ffffff;
+  z-index: 3;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+figcaption h5 {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+figure:hover figcaption {
+  transform: translateY(0);
+} */

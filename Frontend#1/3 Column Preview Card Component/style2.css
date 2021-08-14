@@ -1,0 +1,27 @@
+/* tampilan mobile */
+
+@media only screen and (max-width: 844px) {
+  body {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    flex-wrap: wrap;
+  }
+
+  main {
+    padding: 50px 0;
+    flex-direction: column;
+  }
+
+  article.sedan {
+    border-radius: 7px 7px 0 0;
+  }
+
+  article.luxury {
+    border-radius: 0 0 7px 7px;
+  }
+
+  article.p {
+    font-size: 0.75rem;
+  }
+}
