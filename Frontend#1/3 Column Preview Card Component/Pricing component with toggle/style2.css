@@ -1,0 +1,34 @@
+@media screen and (min-width: 1200px) {
+  body {
+    background: url("images/bg-top.svg") no-repeat top right,
+      url("images/bg-bottom.svg") no-repeat bottom left;
+  }
+
+  .container {
+    height: 90vh;
+  }
+
+  .card-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  article:nth-of-type(1) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  article:nth-of-type(2) {
+    z-index: 2;
+    height: 550px;
+  }
+
+  article:nth-of-type(3) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: o;
+  }
+
+  .card-content {
+    margin: auto 0;
+  }
+}
