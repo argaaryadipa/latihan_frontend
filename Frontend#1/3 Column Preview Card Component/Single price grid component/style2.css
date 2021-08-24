@@ -1,0 +1,42 @@
+@media (max-width: 1100px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  #main {
+    width: 85%;
+    margin: 10em auto;
+  }
+
+  .hero {
+    padding: 3em 2em;
+  }
+
+  .hero-p {
+    width: 100%;
+  }
+
+  .bottom-sect {
+    flex-direction: column;
+  }
+
+  .left {
+    border-radius: 0;
+  }
+
+  .sign-up-btn {
+    display: block;
+  }
+
+  .right {
+    border-radius: 0 0 10px 10px;
+  }
+}
