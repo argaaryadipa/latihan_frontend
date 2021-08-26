@@ -1,0 +1,85 @@
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    margin-top: 8rem;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .wrapper,
+  .feedback {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper .intro,
+  .wrapper .rating {
+    margin-top: 0;
+  }
+
+  .intro {
+    text-align: left;
+    width: 33%;
+  }
+
+  .rating {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .rating div {
+    text-align: left;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .rating__review,
+  .rating__guru,
+  .rating__besttech {
+    width: 80%;
+  }
+
+  .rating__review p,
+  .rating__guru p,
+  .rating__besttech p {
+    display: inline-block;
+    margin-left: 1.5rem;
+  }
+
+  .rating__guru {
+    align-self: center;
+  }
+
+  .rating__besttech {
+    align-self: flex-end;
+  }
+
+  .feedback {
+    height: 300px;
+  }
+
+  .feedback__user {
+    width: 32%;
+    margin-bottom: 0;
+  }
+
+  .feedback__user--top {
+    align-self: flex-start;
+  }
+
+  .feedback__user--center {
+    align-self: center;
+  }
+
+  .feedback__user--bottom {
+    align-self: flex-end;
+  }
+
+  .attribution {
+    margin-top: 6rem;
+  }
+}
