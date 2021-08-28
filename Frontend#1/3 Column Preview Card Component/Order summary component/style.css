@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+  --paleblue: hsl(225, 100%, 94%);
+  --brightblue: hsl(245, 75%, 52%);
+  --verypaleblue: hsl(225, 100%, 98%);
+  --desaturatedblue: hsl(224, 23%, 55%);
+  --darkblue: hsl(223, 47%, 23%);
+  --plan: hsl(230, 75%, 96%);
+  --active: hsl(245, 35%, 52%);
+}
+
+body {
+  background-color: var(--paleblue);
+  margin: 1rem;
+}
+
+p {
+  font-size: 16px;
+  color: var(--desaturatedblue);
+  font-weight: 700;
+}
+
+#card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 330px;
+  height: auto;
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--verypaleblue);
+  text-align: center;
+}
+
+.headerPic {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.summary {
+  width: 80%;
+}
+
+.summary h2 {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.summary p {
+  line-height: 1.9;
+  letter-spacing: 0.5px;
+  margin-bottom: 2em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+  color: var(--desaturatedblue);
+  font-weight: 700;
+}
+
+.plan {
+  width: 88%;
+  margin-bottom: 2em;
+  padding: 1em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--plan);
+}
+
+.plan div {
+  display: flex;
+}
+
+.planDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+.plan h3 {
+  font-size: 15px;
+  margin-bottom: 0.4em;
+}
+
+.plan a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.plan a:hover {
+  text-decoration: none;
+  color: var(--active);
+}
+
+.payment {
+  margin-bottom: 1em;
+  width: 90%;
+  padding: 0.8em 2em;
+  background-color: var(--brightblue);
+  border-radius: 10px;
+  color: var(--paleblue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.payment:hover {
+  background-color: var(--active);
+}
+
+.cancel {
+  width: 90%;
+  padding: 0.8em 2em;
+  background-color: var(--verypaleblue);
+  border-radius: 10px;
+  color: var(--desaturatedblue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cancel:hover {
+  color: initial;
+}
